@@ -1,0 +1,8 @@
+{
+  "name": "Remix GyanSarthi",
+  "description": "Interactive study portal with 11,000+ board lectures, chapters, PDFs, notes, and reel revision player from Flip Studies.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

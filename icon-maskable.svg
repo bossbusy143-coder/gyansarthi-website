@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg-mask" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="50%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+    <linearGradient id="gold-mask" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#facc15"/>
+      <stop offset="100%" stop-color="#eab308"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Full-bleed background for maskable safety -->
+  <rect width="512" height="512" fill="url(#bg-mask)"/>
+
+  <!-- Safe-zone centered group (scaled down to 78% so outer 15% can be cropped freely by Android launchers) -->
+  <g transform="translate(256, 256) scale(0.76) translate(-256, -256)">
+    <!-- Graduation Cap Diamond -->
+    <polygon points="256,120 420,195 256,270 92,195" fill="#ffffff"/>
+    
+    <!-- Cap Under-trim / Band -->
+    <path d="M160,235 L160,295 C160,345 352,345 352,295 L352,235" fill="#e0e7ff"/>
+
+    <!-- Gold Button on Cap -->
+    <circle cx="256" cy="195" r="14" fill="url(#gold-mask)"/>
+
+    <!-- Tassel Ribbon -->
+    <path d="M256,195 Q390,215 385,280" stroke="url(#gold-mask)" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <rect x="375" y="280" width="20" height="42" rx="6" fill="url(#gold-mask)"/>
+
+    <!-- Open Book / Pages under cap -->
+    <path d="M110,355 C180,320 240,345 256,360 C272,345 332,320 402,355 L402,400 C332,365 272,390 256,405 C240,390 180,365 110,400 Z" fill="#ffffff"/>
+    <path d="M256,360 L256,405" stroke="#93c5fd" stroke-width="4"/>
+
+    <text x="256" y="475" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="46" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="4">GYANSARTHI</text>
+  </g>
+</svg>

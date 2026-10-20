@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="50%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#facc15"/>
+      <stop offset="100%" stop-color="#eab308"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background rounded squircle -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+
+  <!-- Subtle glow -->
+  <circle cx="256" cy="180" r="140" fill="#60a5fa" opacity="0.25"/>
+
+  <!-- Main GyanSarthi Graduation Cap & Book Motif -->
+  <g filter="url(#shadow)" transform="translate(0, 10)">
+    <!-- Graduation Cap Diamond -->
+    <polygon points="256,110 420,185 256,260 92,185" fill="#ffffff"/>
+    
+    <!-- Cap Under-trim / Band -->
+    <path d="M160,225 L160,285 C160,335 352,335 352,285 L352,225" fill="#e0e7ff"/>
+
+    <!-- Gold Button on Cap -->
+    <circle cx="256" cy="185" r="14" fill="url(#gold)"/>
+
+    <!-- Tassel Ribbon -->
+    <path d="M256,185 Q390,205 385,270" stroke="url(#gold)" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <rect x="375" y="270" width="20" height="42" rx="6" fill="url(#gold)"/>
+
+    <!-- Open Book / Pages under cap -->
+    <path d="M110,345 C180,310 240,335 256,350 C272,335 332,310 402,345 L402,390 C332,355 272,380 256,395 C240,380 180,355 110,390 Z" fill="#ffffff"/>
+    <path d="M256,350 L256,395" stroke="#93c5fd" stroke-width="4"/>
+  </g>
+
+  <!-- GyanSarthi GS Monogram / Tag -->
+  <text x="256" y="465" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="4">GYANSARTHI</text>
+</svg>
